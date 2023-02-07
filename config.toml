@@ -1,0 +1,9 @@
+baseURL = 'http://hugo-deploy-duke.s3-website-us-east-1.amazonaws.com/'
+languageCode = 'en-us'
+title = 'Hugo AWS Continous Delivery 1'
+theme = "ananke"
+
+[[deployment.targets]]
+# An arbitrary name for this target.
+name = "awsbucket"
+URL = "s3://hugo-deploy-duke/?region=us-east-1" #your bucket here
